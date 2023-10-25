@@ -27,7 +27,7 @@ public class Main {
         try {
             shop.placeOrder(customer1, "Laptop", 2);
             shop.placeOrder(customer2, "Phone", 3);
-            shop.placeOrder(customer1, "Tablet", 1); // NonExistentProductException
+            shop.placeOrder(customer1, "Tv", 1); // NonExistentProductException
             shop.placeOrder(new Customer("Alex"), "Laptop", 1); // NonExistentCustomerException
             shop.placeOrder(customer2, "Phone", -1); // NegativeQuantityException
         } catch (NonExistentCustomerException e) {
